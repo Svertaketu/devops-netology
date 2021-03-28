@@ -43,7 +43,7 @@
                             + result.replace('\tизменено:      ', '/')
            print(prepare_result)
    ```
-1. Скрипт принимает <URL сервиса> как входной параметр.(drive.google.com mail.google.com google.com)
+1. Скрипт принимает <URL сервиса> как входной параметр.(drive.google.com mail.google.com google.com).
 
    ```python
    #!/usr/bin/env python3
