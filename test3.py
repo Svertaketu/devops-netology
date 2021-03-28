@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 
 import os
+import sys
 
-bash_command = ["cd ~/PycharmProjects/netology/devops-netology", "git status"]
+test_path = sys.argv[1]
+bash_command = ["cd " + test_path, "git status"]
 result_os = os.popen(' && '.join(bash_command)).read()
-#is_change = False
-
 
 for result in result_os.split('\n'):
     if result.find('изменено') != -1:
-        prepare_result = result.replace('\tизменено:      ', '')
-        print(bash_command[0].replace('cd ','')  + '/' +  prepare_result)
-        #break
+        prepare_result = ' ' + bash_command[0].replace('cd ', '') \
+                         + result.replace('\tизменено:      ', '/')
+        print(prepare_result)
+
