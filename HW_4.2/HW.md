@@ -13,7 +13,9 @@
     * Объявляем a = '1', b = '2', получаем c = 12
     * Объявляем a = 1, b = 2, получаем c = 3
     
-1.  ```python  
+
+1.  Скрипт:
+    ```python  
     #!/usr/bin/env python3
       
     import os
@@ -27,7 +29,8 @@
                       + '/' + result.replace('\tизменено:      ', '')
             print(prepare_result)
     ```
-1. ```python
+1. Скрипт:
+   ```python
    #!/usr/bin/env python3
 
    import os
