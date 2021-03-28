@@ -5,7 +5,6 @@ import subprocess
 import time
 
 
-# Adding the URL and IP from the arguments to the dict
 def get_url_ip(url):
     url_ip = {}
     for count in range(len(url)):
