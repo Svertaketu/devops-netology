@@ -50,8 +50,6 @@
    import sys
    import socket
    import subprocess
-   import time
-   
    
    def get_url_ip(url):
        url_ip = {}
@@ -65,13 +63,14 @@
    
    cnt_ask = 0
    print('-' * 40)
-   while cnt_ask < 100:
+   while 1==1:
        if cnt_ask == 0:
            url_ip_dict = get_url_ip(sys.argv)
            for item_key in url_ip_dict.keys():
                result = item_key + " - " + url_ip_dict[item_key]
                print(result)
            url_ip_dict_coll = url_ip_dict
+           cnt_ask = 1
        else:
            url_ip_dict = get_url_ip(sys.argv)
            for item_key in url_ip_dict.keys():
@@ -85,6 +84,4 @@
                    print(result)
            url_ip_dict_coll = url_ip_dict
        print('-' * 40)
-       cnt_ask += 1
-       time.sleep(1)
    ```
