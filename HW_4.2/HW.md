@@ -2,7 +2,7 @@
 
 ## Обязательные задания
 
-1.  Скрипт:
+1. Скрипт:
 	```python
     #!/usr/bin/env python3
 	a = 1
@@ -13,11 +13,9 @@
     * Объявляем a = '1', b = '2', получаем c = 12
     * Объявляем a = 1, b = 2, получаем c = 3
     
-
 1.  Скрипт:
     ```python  
     #!/usr/bin/env python3
-      
     import os
     
     bash_command = ["cd ~/PycharmProjects/netology/devops-netology", "git status"]
@@ -32,7 +30,6 @@
 1. Скрипт:
    ```python
    #!/usr/bin/env python3
-
    import os
    import sys
 
