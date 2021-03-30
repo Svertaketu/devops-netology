@@ -3,17 +3,20 @@
 ## Обязательные задания
 1. Исправленный JSON:
 	```json
-     { "info" : "Sample JSON output from our service",
-        "elements" :[
-            { "name" : "first",
-            "type" : "server",
-            "ip" : "71.75.34.40"
-            },
-            { "name" : "second",
-            "type" : "proxy",
-            "ip": "71.78.22.43"
-            }
-        ]
+    {
+      "info": "Sample JSON output from our service",
+      "elements": [
+        {
+          "name": "first",
+          "type": "server",
+          "ip": "71.75.34.40"
+        },
+        {
+          "name": "second",
+          "type": "proxy",
+          "ip": "71.78.22.43"
+        }
+      ]
     }
     ```
  1. Скрипт:
