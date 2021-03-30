@@ -17,10 +17,12 @@ def get_url_ip(url):
 
 
 def write_to_json_and_yaml(s_dict, file_json, file_yaml):
+    s_list = list(s_dict.items())
+    m_list = [dict([i]) for i in s_list]
     with open(str(file_json), "w") as js:
-        js.write(json.dumps(s_dict, indent=2))
+        js.write(json.dumps(m_list, indent=2))
     with open(str(file_yaml), "w") as ym:
-        ym.write(yaml.dump(s_dict, indent=2,
+        ym.write(yaml.dump(m_list, indent=2,
                            explicit_start=True,
                            sort_keys=False))
 
